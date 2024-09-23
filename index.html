@@ -25,12 +25,6 @@
             text-align: center;
         }
 
-        header img {
-            width: 120px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
         .hero-section {
             background: url('assets/hero-image.jpg') no-repeat center center/cover;
             height: 500px;
@@ -65,27 +59,30 @@
         .btn-primary:hover {
             background-color: #00368d;
         }
+
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <img src="logo.jpg" alt="YCDG Logo">
-        <h1>Youth Community Development Ghana</h1>
-        <p>Empowering Youth and Promoting Community Development in Ghana</p>
-    </header>
-
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">YCDG</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="YCDG Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
