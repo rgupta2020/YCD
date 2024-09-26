@@ -64,6 +64,20 @@
             height: 50px;
             width: auto;
         }
+
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .custom-subtitle {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -103,14 +117,40 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="text-center">
-            <h1>Join Us in Making a Difference</h1>
-            <p>Together, we empower the youth and build stronger communities.</p>
-            <a href="contact.html" class="btn btn-primary btn-lg">Get Involved</a>
+    <!-- Carousel Slideshow -->
+    <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/slideshow1.jpg" class="d-block w-100" alt="Slideshow Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slideshow2.jpg" class="d-block w-100" alt="Slideshow Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/slideshow3.jpg" class="d-block w-100" alt="Slideshow Image 3">
+            </div>
         </div>
-    </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Subtitle -->
+    <div class="custom-subtitle">
+        On behalf of the Leadership, Management and Staff of Youth Community Development Ghana (YCDG),
+        formerly God's Plan Foundation in Ghana, it is my pleasure to thank you for visiting our website
+        and supporting the work we do in Ghana.
+    </div>
+    
+    <!-- Get Involved Section -->
+    <div class="text-center my-4">
+        <a href="contact.html" class="btn btn-primary btn-lg">Get Involved</a>
+    </div>
 
     <!-- Featured Sections -->
     <div class="container">
